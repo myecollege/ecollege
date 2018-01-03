@@ -54,4 +54,10 @@ public class HomeController {
 		String token = req.getParameter("token"); 
 			return "home";
 	}
+	@RequestMapping(value = "/a", method = RequestMethod.GET)
+	@SystemLogAnno
+	public String a(HttpServletRequest req, HttpSession httpSession) {
+		String token = req.getParameter("token"); 
+			return "home";
+	}
 }
